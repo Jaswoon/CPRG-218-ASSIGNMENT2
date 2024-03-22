@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> KLAZYVN </title>
+    <link rel="stylesheet" href="STYLES/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <script src="JAVASCRIPT/WEBSITE.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezWE9odJi1Yv5VYT7W6S2ntT9zRorH+3pL5gkfWtSnYEEu3zIb56W2E04tG7iEi7" crossorigin="anonymous">
+</head>
+<body>
+    <section class="hero" aria-label="Hero Photo of me infront of Gong Cha Boba tea making a small smile">
+        <div class="hero-inner">
+            <h1>Artwork & Skills Showcase</h1>
+            <h2>My Process and Final Pieces</h2>
+            <a href="https://www.artstation.com/klazyvn" class="btn">My Artstation</a>
+        </div>
+    </section>
+    <section class="content-container">
+        <main>
+            <section class="introduction">
+                <div>
+                    <h2>Who am I? </h2>
+                    <img src="assets/IMG_0259.jpeg" alt="Image of me in front of Gong cha" class="profile-image">
+                    <p>My name is Jason and I have been drawing for as long as I remember and started commissions 4 years ago.</p>
+                    <br>
+                    <p>Here is some of my work and processes! Also click to see expanded images!</p>
+                </div>
+            </section>
+        </main>
+    </section>
+
+
+<!-- this side is Content section AND Card section-->
+    <section class="artwork-section">
+        <div class="artwork-container" onclick="expandImage(this)">
+            <img src="assets/KAFKA_PLEASE.png" alt="Kafka from Honkai Starrail sitting on a stone chair cross legged and holding her GLOWING WEBS">
+            <p>Fanart of Kafka from Honkai Starrail - Personal Project</p>
+        </div>
+
+        <div class="artwork-container" onclick="expandImage(this)">
+            <img src="assets/RAIDEN-EI.png" alt="Drawing of Raiden Ei from Genshin Impact holding a sword in a stance.">
+            <p>Fanart of Ei from Genshin Impact - Personal Project</p>
+        </div>
+
+        <div class="artwork-container" onclick="expandImage(this)">
+            <img src="assets/Illustration-_Dehya_BG.png" alt="Full image of Dehya from Genshin impact with flames encircling her.">
+            <p>Fanart of Dehya from Genshin Impact - Personal Project</p>
+        </div>
+
+        <div class="artwork-container" onclick="expandImage(this)">
+            <img src="assets/Illustration_-_Captain_Misty_Morgan_PNG.png" alt="Commissioned art of an DnD original character throwing fire from her hand and holding a rapier in another hands.">
+            <p>Captain Misty Morgan Character Drawing - Art Commission</p>
+        </div>
+
+        <div class="artwork-container" onclick="expandImage(this)">
+            <img src="assets/Illustration_-_SPEAR_OC.png" alt="Commissioned art of an original character holding a spear and a shadow or misty dragon coming from behind him.">
+            <p>Original Character Client Drawing - Art Commission</p>
+        </div>
+
+    </section>
+
+    <section class="inspiration-section">
+        <h2>My Biggest Inspiration for Art</h2>
+        <p>WLOP is a phenomenal artist that has inspired me for years on end. I first started following this artist when I was around 15 years old and since then I have been in awe of every single work that they have posted and showcased.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/In8fT9jcAPU" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <section class="container accordion-container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">&#128062; Early Passion for Art</button>
+                <div class="accordion-content">
+                    <p>My passion for art ignited when I was in kindergarten, where my drawings were often praised, laying the foundation for my artistic journey.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">&#128062; Transition to Digital Art</button>
+                <div class="accordion-content">
+                    <p>Four years ago, I delved into the world of digital art, which allowed me to explore new techniques and possibilities in my creative process.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">&#128062; Starting Commissions</button>
+                <div class="accordion-content">
+                    <p>Around the same time, I began taking commissions, turning my passion for art into a profession and sharing my creativity with others.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">&#128062; Evolution as an Artist</button>
+                <div class="accordion-content">
+                    <p>Through continuous practice and exploration, I've evolved as an artist, constantly pushing boundaries and refining my skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<section class="footer-container">
+    <div class="footer-content">
+        <div class="footer-info">
+            <h3>Contact Me</h3>
+            <p>123 Artist Avenue, Creative City</p>
+            <p>Email: jason@klazyvn.com</p>
+        </div>
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Me</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/klazyvn/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.deviantart.com/klazyvn" target="_blank">DeviantArt</a></li>
+                <li><a href="https://twitter.com/klazyvn" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year"></span> Monkey Rescue Organization. All rights reserved.</p>
+        <script>
+          document.getElementById("copyright-year").innerText = new Date().getFullYear();
+        </script>
+      </div>
+</section>
+</body>
+</html>
