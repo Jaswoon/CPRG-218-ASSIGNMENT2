@@ -1,3 +1,5 @@
+
+
 const expandImage = (element) => {
     // Get the source of the clicked image
     const imgSrc = element.querySelector("img").src;
